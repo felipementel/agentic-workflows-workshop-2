@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   issues:
     types: [opened]
-engine: copilot
+#engine: copilot
 safe-outputs:
   add-comment:
 
@@ -24,6 +24,9 @@ jobs:
           fi
 
 if: needs.filter.outputs.should-run == 'true'
+
+tools:
+  github:
 ---
 
 # Bug Issue Responder

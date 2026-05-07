@@ -32,3 +32,6 @@ tools:
 # Bug Issue Responder
 
 Triage bug report: "${{ github.event.issue.title }}" and add-comment with a summary of the next steps.
+
+
+//[ "${{ github.event_name }}" = "workflow_dispatch" ] ||

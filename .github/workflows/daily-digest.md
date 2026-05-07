@@ -1,29 +1,38 @@
 ---
 name: Daily Digest
 on:
-  schedule: daily on weekdays
+  schedule: "*/10 * * * *"
   workflow_dispatch:
 permissions:
-  # issues: write
+  issues: read
   contents: read
+  pull-requests: read
 safe-outputs:
   create-issue:
     max: 1
+    title-prefix: "[repo status] "
+    labels: [report]
+
+tools:
+  github:
 ---
-
-# daily-digest
-
-Describe what you want the AI to do when this workflow runs.
 
 ## Instructions
 
-Every weekday, create a GitHub issue that summarises all open issues
-and pull requests in this repository. Group them by label. Include the
-total count, the title, the author, and how long each item has been
-open. Title the issue "Daily Digest – <date>".
+Every 10 minutes
+ - Update the readme with the execution data and time, and scan the repository to analyze the folder structure and see if we need to update anything.
+ - Also write a new poem at the end of the readme.
+ - Create a GitHub issue that summarises all open issues
+   and pull requests in this repository. Group them by label. Include the
+   total count, the title, the author, and how long each item has been
+   open. Title the issue "Daily Digest – <date>".
 
+Create a daily status report for maintainers.
 
-## Notes
+Include
+- Recent repository activity (issues, PRs, discussions, releases, code changes)
+- Progress tracking, goal reminders and highlights
+- Project status and recommendations
+- Actionable next steps for maintainers
 
-- Run `gh aw compile` to generate the GitHub Actions workflow
-- See https://github.github.com/gh-aw/ for complete configuration options and tools documentation
+Keep it concise and link to the relevant issues/PRs.

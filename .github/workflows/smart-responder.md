@@ -1,5 +1,6 @@
 ---
 on:
+  workflow_dispatch:
   issues:
     types: [opened]
 engine: copilot

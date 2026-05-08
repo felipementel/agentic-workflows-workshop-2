@@ -3,10 +3,13 @@ on:
   workflow_dispatch:
   issues:
     types: [opened]
-#engine: copilot
+engine: copilot
 safe-outputs:
   add-comment:
-
+permissions:
+  issues: read
+  contents: read
+  pull-requests: read
 jobs:
   filter:
     runs-on: ubuntu-latest

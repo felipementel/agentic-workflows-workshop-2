@@ -36,5 +36,7 @@ tools:
 
 Triage bug report: "${{ github.event.issue.title }}" and add-comment with a summary of the next steps.
 
+At the end of the comment, write a poem about bugs in code.
+
 
 //[ "${{ github.event_name }}" = "workflow_dispatch" ] ||

@@ -12,4 +12,4 @@ safe-outputs:
 
 # Issue Triage Assistant
 
-Analyze new issue content and provide helpful guidance. Examine the title and description for bug reports needing information, feature requests to categorize, questions to answer, or potential duplicates. Respond with a comment guiding next steps or providing immediate assistance.
+Analise o conteúdo de novos problemas e forneça orientações úteis. Examine o título e a descrição para identificar relatórios de bugs que precisam de informações, solicitações de recursos para categorizar, perguntas a serem respondidas ou possíveis duplicatas. Responda com um comentário orientando os próximos passos ou fornecendo assistência imediata.

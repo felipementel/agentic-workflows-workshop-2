@@ -34,9 +34,9 @@ tools:
 
 # Bug Issue Responder
 
-Triage bug report: "${{ github.event.issue.title }}" and add-comment with a summary of the next steps.
+Triagem do relatório de bug: "${{ github.event.issue.title }}" e adicione um comentário com um resumo dos próximos passos.
 
-At the end of the comment, write a poem about bugs in code.
+Ao final do comentário, escreva um poema sobre bugs no código e como eles são resolvidos, para alegrar o dia coloque um emoji que transmita alegria.
 
 
 //[ "${{ github.event_name }}" = "workflow_dispatch" ] ||

@@ -7,9 +7,6 @@ permissions:
   contents: read
   issues: read
   pull-requests: read
-safe-outputs:
-  add-comment:
-    max: 1
 
 # Tools - GitHub API access via toolsets (context, repos, issues, pull_requests)
 tools:

@@ -1,5 +1,5 @@
 ---
-Name: Open Pull Request Handler
+name: Open Pull Request Handler
 on:
   pull_request:
     types: [opened]

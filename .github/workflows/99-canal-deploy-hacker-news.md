@@ -13,7 +13,7 @@ safe-outputs:
   add-comment:
 ---
 
-# canal-deploy-hacker-news
+# canal-deploy-analise
 
 ChatOps comando de barra para simular a implantação de um canal.
 

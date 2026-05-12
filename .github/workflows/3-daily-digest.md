@@ -1,7 +1,7 @@
 ---
 name: Daily Digest
 on:
-  schedule: weekly on monday around 11:00 AM
+  # schedule: weekly on monday around 11:00 AM
   workflow_dispatch:
 permissions:
   issues: read
